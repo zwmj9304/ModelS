@@ -2,9 +2,8 @@
 markdown:         redcarpet
 highlighter:      pygments
 
-# Permalinks
-permalink:        pretty
-relative_permalinks: false
+gems:
+    [jekyll-paginate]
 
 # Setup
 title:            Hyde
