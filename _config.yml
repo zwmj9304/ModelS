@@ -5,15 +5,15 @@ highlighter:      pygments
 gems:             [jekyll-paginate]
 
 # Setup
-title:            Hyde
-tagline:          'A Jekyll theme'
-description:      'A brazen two-column <a href="http://jekyllrb.com" target="_blank">Jekyll</a> theme that pairs a prominent sidebar with uncomplicated content. Made by <a href="https://twitter.com/mdo" target="_blank">@mdo</a>.'
+title:            Project Model S
+tagline:          'S is for SCAN'
+description:      'Parallel Variational Shape Approximation for simplifying 3D scaned dense meshes'
 url:              http://hyde.getpoole.com
 baseurl:          https://zwmj9304.github.io/ModelS/
 
 author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
+  name:           'George Zhu and Min Park'
+  url:            https://zwmj9304.github.io/resume/
 
 paginate:         5
 
@@ -21,4 +21,4 @@ paginate:         5
 version:          2.1.0
 
 github:
-  repo:           https://github.com/poole/hyde
+  repo:           https://github.com/zwmj9304/ModelS
