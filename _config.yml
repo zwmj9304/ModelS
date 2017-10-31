@@ -1,7 +1,6 @@
 # Dependencies
 # markdown:         redcarpet
 # highlighter:      pygments
-
 gems:             [jekyll-paginate]
 
 # Setup
@@ -10,7 +9,7 @@ tagline:          'Parallel Variational Shape Approximation for simplifying 3D s
 description:      'Parallel Variational Shape Approximation for simplifying 3D scanned dense meshes'
 url:              https://zwmj9304.github.io/ModelS
 baseurl:          https://zwmj9304.github.io/ModelS/
-repourl:          https://raw.githubusercontent.com/zwmj9304/ModelS/gh-pages
+rawurl:           https://raw.githubusercontent.com/zwmj9304/ModelS/gh-pages
 
 author:
   name:           'George Zhu and Min Park'
