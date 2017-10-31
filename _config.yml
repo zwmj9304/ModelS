@@ -10,6 +10,7 @@ tagline:          'Parallel Variational Shape Approximation for simplifying 3D s
 description:      'Parallel Variational Shape Approximation for simplifying 3D scanned dense meshes'
 url:              https://zwmj9304.github.io/ModelS
 baseurl:          https://zwmj9304.github.io/ModelS/
+repourl:          https://github.com/zwmj9304/ModelS
 
 author:
   name:           'George Zhu and Min Park'
