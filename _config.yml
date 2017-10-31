@@ -7,8 +7,8 @@ gems:             [jekyll-paginate]
 # Setup
 title:            Project Model S
 tagline:          'S is for SCAN'
-description:      'Parallel Variational Shape Approximation for simplifying 3D scaned dense meshes'
-url:              http://hyde.getpoole.com
+description:      'Parallel Variational Shape Approximation for simplifying 3D scanned dense meshes'
+url:              https://zwmj9304.github.io/ModelS/
 baseurl:          https://zwmj9304.github.io/ModelS/
 
 author:
