@@ -2,7 +2,7 @@
 layout: post
 title: Proposal - Project Model S
 ---
-![TrailerImg](../_images/trailer.png "Spoiler Alert!")
+![TrailerImg]({{ site.url }}/_images/trailer.png "Spoiler Alert!")
 <div class="message">
   <b>Summary:</b> We are parallelizing Variational Shape Approximation, a mesh simplifying algorithm to 
   efficiently process large input meshes obtained from 3D scanners.
