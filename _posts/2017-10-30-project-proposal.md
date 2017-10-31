@@ -51,11 +51,13 @@ an efficient halfedge-like data structure for CUDA is also a challenge.
 challenge that could directly limit our input size.
 4. (optional) We will also consider migrating of our code onto different modelling software platforms. Integrating CUDA on those
 platforms will be a problem.
+
 ### Resources
 * [VSA Source Code (partial) used in MEPP](https://github.com/MEPP-team/MEPP/blob/master/src/components/Segmentation/VSA/src/VSA_Component.cpp)
 * [An experimental (broken) implementation of VSA](https://github.com/cnr-isti-vclab/meshlab/tree/master/src/plugins_experimental/filter_vsa)
 * [A CUDA implementation of K-Means](https://github.com/src-d/kmcuda)
 * [Autodesk Recap Software](https://www.autodesk.com/products/recap/overview)
+
 ### Goals and Deliverables
 The goal is to achieve good speed up of VSA without downgrading its output quality, and to enable processing of very 
 large data sets.
@@ -69,23 +71,28 @@ and integrate it into Scotty3D. The CUDA VSA program will also be further extrac
 integrated on other modelling platforms.
 
 ### Schedule
-##### **Nov 6 2017** - Environment set up
+##### Nov 6 2017 - Environment set up
 - Clean up Scotty3D
 - Implement part of the VSA algorithm
-##### **Nov 13 2017** - Working sequential algorithm on Scotty3D
+
+##### Nov 13 2017 - Working sequential algorithm on Scotty3D
 - Implement the whole set of algorithm in Scotty3D
 - Developed halfedge-like mesh data structure for CUDA
-##### **Nov 20 2017** - Preliminary CUDA Integration
+
+##### Nov 20 2017 - Preliminary CUDA Integration
 - Build up the CPU-GPU processing pipeline for input meshes
 - Support CUDA function call in Scotty3D
 - Test one or two parallel approches
-##### **Nov 27 2017** - Support for Interactive Simplification
+
+##### Nov 27 2017 - Support for Interactive Simplification
 - Add features on top of VSA to support interactively adding and removing faces
 - Continue testing parallel approaches
-##### **Dec 4 2017** - Parallel VSA finished
+
+##### Dec 4 2017 - Parallel VSA finished
 - Finished parallel VSA implementation
 - Test on large inputs
 - Gather performance data
-##### **Dec 11 2017** - Prepare for presentation
+
+##### Dec 11 2017 - Prepare for presentation
 - Build up the deliverable
 - Poster and documentation
