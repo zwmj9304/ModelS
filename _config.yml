@@ -1,14 +1,14 @@
 # Dependencies
-markdown:         redcarpet
+# markdown:         redcarpet
 highlighter:      pygments
 
 gems:             [jekyll-paginate]
 
 # Setup
 title:            Project Model S
-tagline:          'S is for SCAN'
+tagline:          'Parallel Variational Shape Approximation for simplifying 3D scanned dense meshes'
 description:      'Parallel Variational Shape Approximation for simplifying 3D scanned dense meshes'
-url:              https://zwmj9304.github.io/ModelS/
+url:              https://zwmj9304.github.io/ModelS
 baseurl:          https://zwmj9304.github.io/ModelS/
 
 author:
@@ -18,7 +18,7 @@ author:
 paginate:         5
 
 # Custom vars
-version:          2.1.0
+version:          1.0.0
 
 github:
   repo:           https://github.com/zwmj9304/ModelS
