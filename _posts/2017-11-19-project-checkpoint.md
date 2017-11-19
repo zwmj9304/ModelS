@@ -8,21 +8,7 @@ title: Checkpoint - Project Model S
   Our next steps will be testing different parallel approaches.
 </div>
 
-### Schedule Checklist
-##### Environment set up
-- (FINISHED) Clean up Scotty3D
-- (FINISHED) Implement part of the VSA algorithm
-
-##### Working sequential algorithm on Scotty3D
-- (FINISHED) Implement the whole set of algorithm in Scotty3D
-- (FINISHED) Develop halfedge-like mesh data structure for CUDA
-
-##### Preliminary CUDA Integration
-- (FINISHED) Build up the CPU-GPU processing pipeline for input meshes
-- (FINISHED) Support CUDA function call in Scotty3D
-- (DOING RIGHT NOW) Test one or two parallel approches
-
-### Results
+### Checkpoint Results
 ##### Sequential Implementation of VSA
 We have implemented the two major parts the Variational Shape Approximation as described
 in the reference research paper. Given an input mesh, VSA will first try to find an optimal
@@ -58,6 +44,20 @@ focus on parallelizing those two routines.
 Due to an X11 forwarding issue, we were not able to run Scotty3D on GHC machines. Although we still
 wish to run Scotty3D through X11 forwarding on GHC machines, we are working on an alternative approach 
 to directly run the CUDA VSA algorithm bypassing X11 forwarding.
+
+### Schedule Checklist
+##### Environment set up
+- (FINISHED) Clean up Scotty3D
+- (FINISHED) Implement part of the VSA algorithm
+
+##### Working sequential algorithm on Scotty3D
+- (FINISHED) Implement the whole set of algorithm in Scotty3D
+- (FINISHED) Develop halfedge-like mesh data structure for CUDA
+
+##### Preliminary CUDA Integration
+- (FINISHED) Build up the CPU-GPU processing pipeline for input meshes
+- (FINISHED) Support CUDA function call in Scotty3D
+- (DOING RIGHT NOW) Test one or two parallel approches
 
 ### Revised Schedule
 ##### Nov 27 2017 - Support for Interactive Simplification
