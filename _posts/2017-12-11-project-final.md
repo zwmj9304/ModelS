@@ -27,9 +27,12 @@ define Q as the global priority queue
 initialize at random P seed triangles as Ri.seed on the mesh
 
 for each seed triangle T:
+
     define i as the Region index T has been assigned to
-    insert its three adjacent triangles Tj in Q, with a priority equal to 
-    their respective distortion error E(Tj,Ri) = ||Tj.normal - Ri.normal||
+    
+    insert its three adjacent triangles Tj in Q, with a priority 
+    equal to their respective distortion error 
+    E(Tj,Ri) = ||Tj.normal - Ri.normal||
 
 while Q is not empty:
     pop the triangle Tj with the least distortion error from Q
@@ -41,8 +44,11 @@ while Q is not empty:
 
 Fitting():
 for each Ri in R:
-    calculate area-weighted average normal of all Tj assigned with Region index i
+    calculate area-weighted average normal of all Tj assigned with
+    Region index i
+    
     update Ri.normal
+    
     for all Tj assigned with Region index i:
         find Tmin whose normal is closest with updated Ri.normal
         assign R[i].seed as Tj
@@ -67,9 +73,14 @@ initialize at random P seed triangles as Ri.seed on the mesh
 
 parallel for each triangle Tj in mesh:
     for each Ri in all Regions:
-        compute the euclidean distance (as approximation to geodesic distance) of Tj.centroid and Ri.centroid
-    pick the nearest M (we use 8) Regions of Tj and compute E(Tj,Ri) = ||Tj.normal - Ri.normal||
-    assign Tj with the Region index k where E(Tj,Rk) is the minimum among the M Regions
+        compute the euclidean distance (as approximation to 
+        geodesic distance) of Tj.centroid and Ri.centroid
+        
+    pick the nearest M (we use 8) Regions of Tj and compute 
+    E(Tj,Ri) = ||Tj.normal - Ri.normal||
+    
+    assign Tj with the Region index k where E(Tj,Rk) is the minimum
+    among the M Regions
 ```
 In this approach we eliminated the priority queue completely. We approximate its behavior by picking the nearest M
 regions around the triangle. Considering each iteration, this algorithm has total work of O(N * P), where N is the
@@ -93,8 +104,12 @@ add all P seed triangles to Q1
 while Q1 is not empty:
     parallel for each triangle Tj in Q1:
         find the region assignment of Tj's three neighbors
-        for each assignment Ri, calculate distortion error E(Tj,Ri) and choose Rk with the minimum E
-        if Tj has not been assigned region or Rk is different than previous assignment Rk':
+        
+        for each assignment Ri, calculate distortion error E(Tj,Ri)
+        and choose Rk with the minimum E
+        
+        if Tj has not been assigned region or Rk is different 
+        than previous assignment Rk':
             assign Tj with region Rk
             add all Tj's neighbors to Q2
         else:
@@ -104,7 +119,8 @@ while Q1 is not empty:
 
 Queue is implemented as follows:
 ```
-1. allocate an output array and a indicator array, both of size numTriangles+1, initialized to 0
+1. allocate an output array and a indicator array, both of size 
+   numTriangles+1, initialized to 0
 2. when adding a triangle Tj to queue, mark indicator_array[j] as 1
 3. exclusive scan on indicator_array, store result in an array scan_result
 4. if indicator_array[j] == 1:
