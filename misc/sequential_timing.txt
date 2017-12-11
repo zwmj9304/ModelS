@@ -1,0 +1,138 @@
+[VSA] Input Face Count = 28576, Proxy Count = 200, Iterations = 40
+[VSA SEQ] Initialization Time (0.0000 sec)
+Total distortion error: 1.437029
+Total distortion error: 0.160143
+Total distortion error: 0.109341
+Total distortion error: 0.093892
+Total distortion error: 0.092221
+Total distortion error: 0.087833
+Total distortion error: 0.084682
+Total distortion error: 0.083038
+Total distortion error: 0.082424
+Total distortion error: 0.081312
+Total distortion error: 0.078821
+Total distortion error: 0.076945
+Total distortion error: 0.076144
+Total distortion error: 0.075828
+Total distortion error: 0.074743
+Total distortion error: 0.073213
+Total distortion error: 0.072887
+Total distortion error: 0.072549
+Total distortion error: 0.072809
+Total distortion error: 0.072519
+Total distortion error: 0.072697
+Total distortion error: 0.072444
+Total distortion error: 0.072387
+Total distortion error: 0.072432
+Total distortion error: 0.072236
+Total distortion error: 0.072198
+Total distortion error: 0.072364
+Total distortion error: 0.072147
+Total distortion error: 0.072110
+Total distortion error: 0.072386
+Total distortion error: 0.072388
+Total distortion error: 0.072054
+Total distortion error: 0.071876
+Total distortion error: 0.071838
+Total distortion error: 0.071972
+Total distortion error: 0.071764
+Total distortion error: 0.071759
+Total distortion error: 0.071774
+Total distortion error: 0.071930
+[VSA SEQ] Flooding Time       (0.3163 sec)
+[VSA SEQ] Proxy fitting Time  (0.0141 sec)
+Final distortion error: 0.071762
+
+
+[VSA] Input Face Count = 133784, Proxy Count = 2000, Iterations = 40
+[VSA CUDA] cudaMalloc()        (0.1272 sec)
+[VSA SEQ] Initialization Time (0.0000 sec)
+Total distortion error: 1.146060
+Total distortion error: 0.069585
+Total distortion error: 0.042855
+Total distortion error: 0.038278
+Total distortion error: 0.035961
+Total distortion error: 0.034518
+Total distortion error: 0.033750
+Total distortion error: 0.033163
+Total distortion error: 0.032656
+Total distortion error: 0.032348
+Total distortion error: 0.032403
+Total distortion error: 0.032014
+Total distortion error: 0.031865
+Total distortion error: 0.031746
+Total distortion error: 0.031537
+Total distortion error: 0.031432
+Total distortion error: 0.031533
+Total distortion error: 0.031356
+Total distortion error: 0.031216
+Total distortion error: 0.031143
+Total distortion error: 0.030991
+Total distortion error: 0.030967
+Total distortion error: 0.031104
+Total distortion error: 0.030914
+Total distortion error: 0.030862
+Total distortion error: 0.030964
+Total distortion error: 0.030805
+Total distortion error: 0.030878
+Total distortion error: 0.030966
+Total distortion error: 0.030863
+Total distortion error: 0.030766
+Total distortion error: 0.030899
+Total distortion error: 0.030773
+Total distortion error: 0.030810
+Total distortion error: 0.030921
+Total distortion error: 0.030767
+Total distortion error: 0.030746
+Total distortion error: 0.030883
+Total distortion error: 0.030715
+[VSA SEQ] Flooding Time       (2.0901 sec)
+[VSA SEQ] Proxy fitting Time  (0.1039 sec)
+Final distortion error: 0.030764
+
+
+[VSA] Input Face Count = 1600000, Proxy Count = 5000, Iterations = 40
+[VSA CUDA] cudaMalloc()        (-0.2440 sec)
+[VSA SEQ] Initialization Time (0.0002 sec)
+Total distortion error: 1.853985
+Total distortion error: 0.096572
+Total distortion error: 0.066876
+Total distortion error: 0.060217
+Total distortion error: 0.057000
+Total distortion error: 0.054932
+Total distortion error: 0.053387
+Total distortion error: 0.052346
+Total distortion error: 0.051621
+Total distortion error: 0.051076
+Total distortion error: 0.050566
+Total distortion error: 0.050216
+Total distortion error: 0.049844
+Total distortion error: 0.049573
+Total distortion error: 0.049286
+Total distortion error: 0.049183
+Total distortion error: 0.049055
+Total distortion error: 0.048753
+Total distortion error: 0.048735
+Total distortion error: 0.048750
+Total distortion error: 0.048521
+Total distortion error: 0.048319
+Total distortion error: 0.048195
+Total distortion error: 0.048111
+Total distortion error: 0.048177
+Total distortion error: 0.048039
+Total distortion error: 0.047955
+Total distortion error: 0.047955
+Total distortion error: 0.047980
+Total distortion error: 0.047909
+Total distortion error: 0.047768
+Total distortion error: 0.047701
+Total distortion error: 0.047649
+Total distortion error: 0.047656
+Total distortion error: 0.047573
+Total distortion error: 0.047523
+Total distortion error: 0.047434
+Total distortion error: 0.047420
+Total distortion error: 0.047378
+[VSA SEQ] Flooding Time       (52.8533 sec)
+[VSA SEQ] Proxy fitting Time  (2.5299 sec)
+Final distortion error: 0.047303

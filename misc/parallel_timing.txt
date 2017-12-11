@@ -1,0 +1,357 @@
+Parallel Naive VSA:
+[VSA] Input Face Count = 28576, Proxy Count = 200, Iterations = 40
+---------------------------------------------------------
+Initializing CUDA for VSA Partitioner
+Found 1 CUDA devices
+Device 0: GeForce GTX 1060 3GB
+   SMs:        9
+   Global mem: 3012 MB
+   CUDA Cap:   6.1
+---------------------------------------------------------
+[VSA CUDA] cudaMalloc()        (0.1261 sec)
+[VSA CUDA] Host to Device I/O  (0.0005 sec)
+[VSA CUDA] Initialization Time (0.0000 sec)
+[VSA CUDA] Flooding Time       (0.0869 sec)
+[VSA CUDA] Proxy fitting Time  (0.0066 sec)
+[VSA CUDA] Device to Host I/O  (0.0004 sec)
+[VSA CUDA] Seq Flooding Time   (0.0084 sec)
+
+Final distortion error: 0.138724
+Final distortion error: 0.114973
+Final distortion error: 0.118627
+Final distortion error: 0.112680
+Final distortion error: 0.108199
+Final distortion error: 0.103578
+Final distortion error: 0.102730
+Final distortion error: 0.097800
+Final distortion error: 0.100430
+Final distortion error: 0.097969
+Final distortion error: 0.094153
+Final distortion error: 0.102820
+Final distortion error: 0.100560
+Final distortion error: 0.099595
+Final distortion error: 0.098016
+Final distortion error: 0.101423
+Final distortion error: 0.103513
+Final distortion error: 0.092847
+Final distortion error: 0.095980
+Final distortion error: 0.097639
+Final distortion error: 0.106224
+Final distortion error: 0.095472
+Final distortion error: 0.099860
+Final distortion error: 0.104574
+Final distortion error: 0.095249
+Final distortion error: 0.100930
+Final distortion error: 0.102439
+Final distortion error: 0.100611
+Final distortion error: 0.093735
+Final distortion error: 0.098170
+Final distortion error: 0.096682
+Final distortion error: 0.094817
+Final distortion error: 0.095875
+Final distortion error: 0.092186
+Final distortion error: 0.098421
+Final distortion error: 0.100508
+Final distortion error: 0.098358
+Final distortion error: 0.094485
+Final distortion error: 0.094170
+Final distortion error: 0.098328
+
+
+
+[VSA] Input Face Count = 133784, Proxy Count = 2000, Iterations = 40
+---------------------------------------------------------
+Initializing CUDA for VSA Partitioner
+Found 1 CUDA devices
+Device 0: GeForce GTX 1060 3GB
+   SMs:        9
+   Global mem: 3012 MB
+   CUDA Cap:   6.1
+---------------------------------------------------------
+[VSA CUDA] cudaMalloc()        (0.1316 sec)
+[VSA CUDA] Host to Device I/O  (0.0016 sec)
+[VSA CUDA] Initialization Time (0.0000 sec)
+[VSA CUDA] Flooding Time       (0.8696 sec)
+[VSA CUDA] Proxy fitting Time  (0.0136 sec)
+[VSA CUDA] Device to Host I/O  (0.0016 sec)
+[VSA CUDA] Seq Flooding Time   (0.0513 sec)
+
+Final distortion error: 0.075178
+Final distortion error: 0.068673
+Final distortion error: 0.066395
+Final distortion error: 0.060210
+Final distortion error: 0.060802
+Final distortion error: 0.056235
+Final distortion error: 0.057298
+Final distortion error: 0.055606
+Final distortion error: 0.058108
+Final distortion error: 0.056402
+Final distortion error: 0.054349
+Final distortion error: 0.054679
+Final distortion error: 0.057154
+Final distortion error: 0.056716
+Final distortion error: 0.057911
+Final distortion error: 0.055616
+Final distortion error: 0.054940
+Final distortion error: 0.053360
+Final distortion error: 0.053795
+Final distortion error: 0.051860
+Final distortion error: 0.054798
+Final distortion error: 0.052926
+Final distortion error: 0.053649
+Final distortion error: 0.053908
+Final distortion error: 0.055406
+Final distortion error: 0.053215
+Final distortion error: 0.054648
+Final distortion error: 0.051329
+Final distortion error: 0.054564
+Final distortion error: 0.051900
+Final distortion error: 0.054420
+Final distortion error: 0.051016
+Final distortion error: 0.053795
+Final distortion error: 0.054096
+Final distortion error: 0.053352
+Final distortion error: 0.055076
+Final distortion error: 0.052559
+Final distortion error: 0.054128
+Final distortion error: 0.054452
+Final distortion error: 0.051808
+
+
+
+[VSA] Input Face Count = 1600000, Proxy Count = 5000, Iterations = 40
+---------------------------------------------------------
+Initializing CUDA for VSA Partitioner
+Found 1 CUDA devices
+Device 0: GeForce GTX 1060 3GB
+   SMs:        9
+   Global mem: 3012 MB
+   CUDA Cap:   6.1
+---------------------------------------------------------
+[VSA CUDA] cudaMalloc()        (0.1262 sec)
+[VSA CUDA] Host to Device I/O  (0.0186 sec)
+[VSA CUDA] Initialization Time (0.0001 sec)
+[VSA CUDA] Flooding Time       (34.3160 sec)
+[VSA CUDA] Proxy fitting Time  (0.1296 sec)
+[VSA CUDA] Device to Host I/O  (0.0186 sec)
+[VSA CUDA] Seq Flooding Time   (1.1401 sec)
+
+Final distortion error: 0.094408
+Final distortion error: 0.083908
+Final distortion error: 0.078891
+Final distortion error: 0.077188
+Final distortion error: 0.077792
+Final distortion error: 0.076419
+Final distortion error: 0.075141
+Final distortion error: 0.074733
+Final distortion error: 0.074071
+Final distortion error: 0.074254
+Final distortion error: 0.074678
+Final distortion error: 0.075298
+Final distortion error: 0.074153
+Final distortion error: 0.073888
+Final distortion error: 0.073533
+Final distortion error: 0.072858
+Final distortion error: 0.072487
+Final distortion error: 0.072775
+Final distortion error: 0.072003
+Final distortion error: 0.072166
+Final distortion error: 0.072160
+Final distortion error: 0.071477
+Final distortion error: 0.071746
+Final distortion error: 0.071728
+Final distortion error: 0.072769
+Final distortion error: 0.072337
+Final distortion error: 0.072237
+Final distortion error: 0.072479
+Final distortion error: 0.071534
+Final distortion error: 0.071709
+Final distortion error: 0.071484
+Final distortion error: 0.071528
+Final distortion error: 0.072360
+Final distortion error: 0.071937
+Final distortion error: 0.071834
+Final distortion error: 0.071859
+Final distortion error: 0.072335
+Final distortion error: 0.071098
+Final distortion error: 0.071160
+Final distortion error: 0.070935
+
+
+Parallel Queued VSA:
+
+[VSA] Input Face Count = 28576, Proxy Count = 200, Iterations = 40
+---------------------------------------------------------
+Initializing CUDA for VSA Partitioner
+Found 1 CUDA devices
+Device 0: GeForce GTX 1060 3GB
+   SMs:        9
+   Global mem: 3012 MB
+   CUDA Cap:   6.1
+---------------------------------------------------------
+[VSA CUDA] cudaMalloc()        (0.1271 sec)
+[VSA CUDA] Host to Device I/O  (0.0004 sec)
+[VSA CUDA] Initialization Time (0.0000 sec)
+[VSA CUDA] Flooding Time       (1.6793 sec)
+[VSA CUDA] Proxy fitting Time  (0.0076 sec)
+[VSA CUDA] Device to Host I/O  (0.0004 sec)
+[VSA CUDA] Seq Flooding Time   (0.0085 sec)
+Final distortion error: 0.120395
+Final distortion error: 0.104323
+Final distortion error: 0.095873
+Final distortion error: 0.095962
+Final distortion error: 0.090676
+Final distortion error: 0.090674
+Final distortion error: 0.086645
+Final distortion error: 0.092372
+Final distortion error: 0.082673
+Final distortion error: 0.084827
+Final distortion error: 0.085290
+Final distortion error: 0.081338
+Final distortion error: 0.084301
+Final distortion error: 0.086390
+Final distortion error: 0.078220
+Final distortion error: 0.081481
+Final distortion error: 0.076397
+Final distortion error: 0.079030
+Final distortion error: 0.082749
+Final distortion error: 0.080320
+Final distortion error: 0.078106
+Final distortion error: 0.085889
+Final distortion error: 0.080610
+Final distortion error: 0.080132
+Final distortion error: 0.077946
+Final distortion error: 0.087937
+Final distortion error: 0.074362
+Final distortion error: 0.075439
+Final distortion error: 0.077372
+Final distortion error: 0.072232
+Final distortion error: 0.073494
+Final distortion error: 0.076159
+Final distortion error: 0.080025
+Final distortion error: 0.076353
+Final distortion error: 0.080701
+Final distortion error: 0.088856
+Final distortion error: 0.079560
+Final distortion error: 0.078346
+Final distortion error: 0.075745
+Final distortion error: 0.078085
+
+
+[VSA] Input Face Count = 133784, Proxy Count = 2000, Iterations = 40
+---------------------------------------------------------
+Initializing CUDA for VSA Partitioner
+Found 1 CUDA devices
+Device 0: GeForce GTX 1060 3GB
+   SMs:        9
+   Global mem: 3012 MB
+   CUDA Cap:   6.1
+---------------------------------------------------------
+[VSA CUDA] cudaMalloc()        (0.1279 sec)
+[VSA CUDA] Host to Device I/O  (0.0016 sec)
+[VSA CUDA] Initialization Time (0.0000 sec)
+[VSA CUDA] Flooding Time       (1.7049 sec)
+[VSA CUDA] Proxy fitting Time  (0.0145 sec)
+[VSA CUDA] Device to Host I/O  (0.0016 sec)
+[VSA CUDA] Seq Flooding Time   (0.0510 sec)
+
+Final distortion error: 0.056228
+Final distortion error: 0.049761
+Final distortion error: 0.048767
+Final distortion error: 0.044016
+Final distortion error: 0.045666
+Final distortion error: 0.045159
+Final distortion error: 0.050339
+Final distortion error: 0.042216
+Final distortion error: 0.042672
+Final distortion error: 0.042328
+Final distortion error: 0.042743
+Final distortion error: 0.042036
+Final distortion error: 0.044060
+Final distortion error: 0.043301
+Final distortion error: 0.043050
+Final distortion error: 0.043302
+Final distortion error: 0.041654
+Final distortion error: 0.043988
+Final distortion error: 0.041452
+Final distortion error: 0.044420
+Final distortion error: 0.044455
+Final distortion error: 0.044839
+Final distortion error: 0.042786
+Final distortion error: 0.045048
+Final distortion error: 0.043269
+Final distortion error: 0.048973
+Final distortion error: 0.044947
+Final distortion error: 0.045323
+Final distortion error: 0.043140
+Final distortion error: 0.044249
+Final distortion error: 0.046019
+Final distortion error: 0.044073
+Final distortion error: 0.043085
+Final distortion error: 0.044628
+Final distortion error: 0.045573
+Final distortion error: 0.043451
+Final distortion error: 0.047671
+Final distortion error: 0.044670
+Final distortion error: 0.044036
+Final distortion error: 0.043527
+
+
+[VSA] Input Face Count = 1600000, Proxy Count = 5000, Iterations = 40
+---------------------------------------------------------
+Initializing CUDA for VSA Partitioner
+Found 1 CUDA devices
+Device 0: GeForce GTX 1060 3GB
+   SMs:        9
+   Global mem: 3012 MB
+   CUDA Cap:   6.1
+---------------------------------------------------------
+[VSA CUDA] cudaMalloc()        (0.1255 sec)
+[VSA CUDA] Host to Device I/O  (0.0187 sec)
+[VSA CUDA] Initialization Time (0.0002 sec)
+[VSA CUDA] Flooding Time       (9.0312 sec)
+[VSA CUDA] Proxy fitting Time  (0.1315 sec)
+[VSA CUDA] Device to Host I/O  (0.0185 sec)
+[VSA CUDA] Seq Flooding Time   (1.1260 sec)
+
+Final distortion error: 0.082389
+Final distortion error: 0.074284
+Final distortion error: 0.070090
+Final distortion error: 0.067763
+Final distortion error: 0.066016
+Final distortion error: 0.064856
+Final distortion error: 0.063493
+Final distortion error: 0.064128
+Final distortion error: 0.062922
+Final distortion error: 0.062428
+Final distortion error: 0.062241
+Final distortion error: 0.062106
+Final distortion error: 0.061513
+Final distortion error: 0.061552
+Final distortion error: 0.061709
+Final distortion error: 0.060798
+Final distortion error: 0.061935
+Final distortion error: 0.060404
+Final distortion error: 0.060265
+Final distortion error: 0.059475
+Final distortion error: 0.060716
+Final distortion error: 0.059710
+Final distortion error: 0.059937
+Final distortion error: 0.060483
+Final distortion error: 0.059371
+Final distortion error: 0.059615
+Final distortion error: 0.060441
+Final distortion error: 0.060205
+Final distortion error: 0.059425
+Final distortion error: 0.059115
+Final distortion error: 0.060426
+Final distortion error: 0.060359
+Final distortion error: 0.059979
+Final distortion error: 0.059599
+Final distortion error: 0.059720
+Final distortion error: 0.058688
+Final distortion error: 0.058536
+Final distortion error: 0.059298
+Final distortion error: 0.059204
+Final distortion error: 0.058147
+
