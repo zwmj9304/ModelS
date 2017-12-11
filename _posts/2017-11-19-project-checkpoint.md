@@ -25,7 +25,12 @@ with Nvidia GTX 1060 graphics card.
 Building on Windows with Visual Studio 2017 and CUDA 9.0 is being tested.
 
 ##### Adjancency List Representation of Mesh Faces
-(TODO by Min)
+We have written a few functions to convert the original pointer chasing scheme of Scotty3D into 
+a more parallel friendly data structure. The new data structure is an array of structs which
+store the particular face's neighbors' indices, normal vector, centroid, and whether the face is a 
+boundary face or not. The idea is that when we want to go to a specific face, we don't have to go 
+through all the pointers until we find the one we want, but instead can specifically access the 
+index in the array.
 
 ##### Baseline Performance Measurements
 The following result is obtained on a MacBook Air machine with 1.7 GHz Intel Core i5 processor,
