@@ -137,7 +137,11 @@ span of O(logN).
 
 ### Random-access Mesh Data Structure
 
-(TODO discription of data structure)
+Originally, Scotty3D used a pointer-based data structure to store the mesh. However, since our project
+involves parallelizing, we needed a way to access the data without pointer chasing since that would leave
+little to no room for paralleization. Therefore, we decided to store the data in a vector. 
+This vector based data structure allows us to access random faces, without having to pointer chase, which
+is crucial for our parallelization algorithms. 
 
 We observed that for the sequential algorithm, using the random-access data structure will yield a
 3X speed up compared to the pointer-based halfedge data structure. Therefore, for a more accurate
