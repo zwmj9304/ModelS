@@ -223,6 +223,7 @@ Joint Conference on Geometric and Physical Modeling. ACM, 2009.
 * Valette, Sebastien, Jean Marc Chassery, and Remy Prost. "Generic remeshing of 3D triangular meshes with
 metric-dependent discrete Voronoi diagrams." IEEE Transactions on Visualization and Computer Graphics 14.2 
 (2008): 369-381.
+* [Scotty3D](https://github.com/15462-f16/Scotty3D)
 * [VSA Source Code (partial) used in MEPP](https://github.com/MEPP-team/MEPP/blob/master/src/components/Segmentation/VSA/src/VSA_Component.cpp)
 * [An experimental (broken) implementation of VSA](https://github.com/cnr-isti-vclab/meshlab/tree/master/src/plugins_experimental/filter_vsa)
 * [A CUDA implementation of K-Means](https://github.com/src-d/kmcuda)
