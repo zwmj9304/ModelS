@@ -2,13 +2,24 @@
 layout: post
 title: Final Report - Project Model S
 ---
+
+<div class="message">
+  <b>Summary:</b> We implemented the sequential Variational Shape Approximation for
+  simplifying large mesh from 3D scanners. We designed and implemented in CUDA two parallel
+  approaches for distortion minimizing flooding, which is the most computation-intensive
+  part of the algorithm, and achieved 7.28X speed up on GTX 1080. We also achieved
+  a 22.31X speed up with GTX 1080 on the second most computation-intensive part.
+</div>
+
 ![ResultImg]({{site.rawurl}}/_images/checkpoint_result.jpg "Variational Shape Approximation")
 
-### Sequential Algorithm Re-visit
+### Background: Sequential Algorithm Re-visit
 As described in the paper by Cohen-Steiner et al., the Variational Shape Approximation algorithm for
-simplifying meshes consists of two major steps: partitioning and meshing. After preliminary testing,
-we found that the first part of the algorithm takes up more than 95% of total computation time. Therefore,
-we decided to focus on parallelizing the partitioning step.
+simplifying meshes consists of two major steps: partitioning and meshing. Given a mesh, VSA will
+first partition it into clusters and then generate a simplified mesh based on clustering results.
+
+After preliminary testing, we found that the first part of the algorithm takes up more than 95% 
+of total computation time. Therefore, we decided to focus on parallelizing the partitioning step.
 
 Cohen-Steiner et al. proposed an efficient partitioning algorithm with O(NlogN) complexity for each iteration 
 (where N is the total number of triangles in the mesh):
@@ -54,7 +65,7 @@ for each Ri in R:
         assign R[i].seed as Tj
 ```
 ![diagram1]({{site.rawurl}}/_images/diagram1.jpg "Sequential Flooding Diagram")
-### Two Parallel Approaches
+### Two Parallel Flooding Approaches
 From the sequential algorithm description, our observations are that:
 1. Fitting() is basically a data-parallel approach. Therefore parallelizing it is relatively simple: we just
 need to parallelize across the triangles to achieve good speed up.
@@ -62,7 +73,9 @@ need to parallelize across the triangles to achieve good speed up.
 expect the exact behavior as the sequential algorithm with a parallel approach. As a result, there are
 performance-accuracy trade offs in parallelizing this part of the algorithm.
 
-We came up with the following two parallel implementations of Flooding().
+We integrated CUDA in Scotty3D and implemented all our algorithms on top of it. We used the thrust library for
+its exclusive scan features. We got the inspiration of the two approaches from two papers that address similar
+problems, and designed our own parallel algorithm.
 
 ##### Naive Data-parallel Flooding
 ![diagram2]({{site.rawurl}}/_images/diagram2.jpg "Naive Flooding Diagram")
@@ -201,3 +214,15 @@ such as shared memory) and improving output quality by solving the parallel conn
 
 More work should also be done on the meshing part. Current meshing algorithm doesn't handle edge cases quite
 well. Many of the edge cases are not addressed in the paper by Cohen-Steiner et al. or any other paper/implementation.
+
+### References
+* Cohen-Steiner, David, Pierre Alliez, and Mathieu Desbrun. "Variational shape approximation." ACM Transactions 
+on Graphics (TOG). Vol. 23. No. 3. ACM, 2004.
+* Fan, Fengtao, et al. "Mesh clustering by approximating centroidal Voronoi tessellation." 2009 SIAM/ACM
+Joint Conference on Geometric and Physical Modeling. ACM, 2009.
+* Valette, Sebastien, Jean Marc Chassery, and Remy Prost. "Generic remeshing of 3D triangular meshes with
+metric-dependent discrete Voronoi diagrams." IEEE Transactions on Visualization and Computer Graphics 14.2 
+(2008): 369-381.
+* [VSA Source Code (partial) used in MEPP](https://github.com/MEPP-team/MEPP/blob/master/src/components/Segmentation/VSA/src/VSA_Component.cpp)
+* [An experimental (broken) implementation of VSA](https://github.com/cnr-isti-vclab/meshlab/tree/master/src/plugins_experimental/filter_vsa)
+* [A CUDA implementation of K-Means](https://github.com/src-d/kmcuda)
