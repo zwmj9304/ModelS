@@ -53,6 +53,7 @@ for each Ri in R:
         find Tmin whose normal is closest with updated Ri.normal
         assign R[i].seed as Tj
 ```
+![diagram1]({{site.rawurl}}/_images/diagram1.jpg "Sequential Flooding Diagram")
 ### Two Parallel Approaches
 From the sequential algorithm description, our observations are that:
 1. Fitting() is basically a data-parallel approach. Therefore parallelizing it is relatively simple: we just
@@ -63,7 +64,8 @@ performance-accuracy trade offs in parallelizing this part of the algorithm.
 
 We came up with the following two parallel implementations of Flooding().
 
-##### Naive Data-parallel VSA
+##### Naive Data-parallel Flooding
+![diagram2]({{site.rawurl}}/_images/diagram2.jpg "Naive Flooding Diagram")
 (Inspired by Fan, Fengtao, et al. "Mesh clustering by approximating centroidal Voronoi tessellation.")
 ```
 define P as the number of partitions(Regions) desired
@@ -89,7 +91,8 @@ the span of it is O(P).
 
 After testing, we found that the accuracy of this approach is not satisfying and that too much additional work is 
 introduced. So we moved on to a more sophisticated approach.
-##### Parallel Queued VSA
+##### Parallel Queued Flooding
+![diagram3]({{site.rawurl}}/_images/diagram3.jpg "Queued Flooding Diagram")
 (Inspired by Sébastien Valette et al. "Generic Remeshing of 3D Triangular Meshes with Metric-Dependent Discrete 
 Voronoi Diagrams")
 
@@ -154,10 +157,12 @@ We tested the sequential algorithm on a Intel® Core™ i7-6700 Processor (8M Ca
 parallel algorithm on 3 different GPUs:
 - NVidia GeForce GTX 1080 with 20 SMs
 - NVidia GeForce GTX 1060 with 9 SMs
-- NVidia GeForce GTX 950 with 6 SMs
+- NVidia GeForce GTX 960M with 5 SMs
 
 The speed up curves are listed below.
-
+![Speedup1]({{site.rawurl}}/_images/speedup_fitting.png "speedup_fitting")
+![Speedup2]({{site.rawurl}}/_images/speedup_naive.png "speedup_naive")
+![Speedup3]({{site.rawurl}}/_images/speedup_queue.png "speedup_queue")
 Although Naive Data-parallel VSA achieved a near-linear speed up across GPUs, its speed up with repect
 to the sequential algorithm decreases as the size of input increases. This is be cause the algorithm
 has introduced addtional work that is linear with respect to P (number of desired partitions).

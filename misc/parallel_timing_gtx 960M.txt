@@ -1,0 +1,123 @@
+Naive:
+[VSA CUDA] Input Face Count = 28576, Proxy Count = 200, Iterations = 40
+[VSA CUDA] buildFaceCu()       (0.0564 sec)
+---------------------------------------------------------
+Initializing CUDA for VSA Partitioner
+Found 1 CUDA devices
+Device 0: GeForce GTX 960M
+   SMs:        5
+   Global mem: 4096 MB
+   CUDA Cap:   5.0
+---------------------------------------------------------
+[VSA CUDA] cudaMalloc()        (0.1515 sec)
+[VSA CUDA] Host to Device I/O  (0.0015 sec)
+[VSA CUDA] Initialization Time (0.0004 sec)
+[VSA CUDA] Flooding Time       (0.1594 sec)
+[VSA CUDA] Proxy fitting Time  (0.1589 sec)
+[VSA CUDA] Device to Host I/O  (0.0021 sec)
+[VSA CUDA] Seq Flooding Time   (0.0451 sec)
+Final distortion error: 0.097439
+[VSA CUDA] getCudaResult()     (0.0035 sec)
+
+[VSA CUDA] Input Face Count = 133784, Proxy Count = 2000, Iterations = 40
+[VSA CUDA] buildFaceCu()       (0.1433 sec)
+---------------------------------------------------------
+Initializing CUDA for VSA Partitioner
+Found 1 CUDA devices
+Device 0: GeForce GTX 960M
+   SMs:        5
+   Global mem: 4096 MB
+   CUDA Cap:   5.0
+---------------------------------------------------------
+[VSA CUDA] cudaMalloc()        (0.3659 sec)
+[VSA CUDA] Host to Device I/O  (0.0041 sec)
+[VSA CUDA] Initialization Time (0.0002 sec)
+[VSA CUDA] Flooding Time       (3.3851 sec)
+[VSA CUDA] Proxy fitting Time  (0.2645 sec)
+[VSA CUDA] Device to Host I/O  (0.0062 sec)
+[VSA CUDA] Seq Flooding Time   (0.0955 sec)
+Final distortion error: 0.056122
+[VSA CUDA] getCudaResult()     (0.0074 sec)
+
+[VSA CUDA] Input Face Count = 1600000, Proxy Count = 5000, Iterations = 40
+[VSA CUDA] buildFaceCu()       (2.2033 sec)
+---------------------------------------------------------
+Initializing CUDA for VSA Partitioner
+Found 1 CUDA devices
+Device 0: GeForce GTX 960M
+   SMs:        5
+   Global mem: 4096 MB
+   CUDA Cap:   5.0
+---------------------------------------------------------
+[VSA CUDA] cudaMalloc()        (0.2315 sec)
+[VSA CUDA] Host to Device I/O  (0.0802 sec)
+[VSA CUDA] Initialization Time (0.0014 sec)
+[VSA CUDA] Flooding Time       (96.6265 sec)
+[VSA CUDA] Proxy fitting Time  (2.6649 sec)
+[VSA CUDA] Device to Host I/O  (0.0543 sec)
+[VSA CUDA] Seq Flooding Time   (1.7390 sec)
+Final distortion error: 0.071496
+[VSA CUDA] getCudaResult()     (0.1118 sec)
+
+
+
+Queue:
+[VSA CUDA] Input Face Count = 28576, Proxy Count = 200, Iterations = 40
+[VSA CUDA] buildFaceCu()       (0.0396 sec)
+---------------------------------------------------------
+Initializing CUDA for VSA Partitioner
+Found 1 CUDA devices
+Device 0: GeForce GTX 960M
+   SMs:        5
+   Global mem: 4096 MB
+   CUDA Cap:   5.0
+---------------------------------------------------------
+[VSA CUDA] cudaMalloc()        (0.2261 sec)
+[VSA CUDA] Host to Device I/O  (0.0012 sec)
+[VSA CUDA] Initialization Time (0.0001 sec)
+[VSA CUDA] Flooding Time       (2.1184 sec)
+[VSA CUDA] Proxy fitting Time  (0.0867 sec)
+[VSA CUDA] Device to Host I/O  (0.0016 sec)
+[VSA CUDA] Seq Flooding Time   (0.0121 sec)
+Final distortion error: 0.075957
+[VSA CUDA] getCudaResult()     (0.0021 sec)
+
+[VSA CUDA] Input Face Count = 133784, Proxy Count = 2000, Iterations = 40
+[VSA CUDA] buildFaceCu()       (0.1350 sec)
+---------------------------------------------------------
+Initializing CUDA for VSA Partitioner
+Found 1 CUDA devices
+Device 0: GeForce GTX 960M
+   SMs:        5
+   Global mem: 4096 MB
+   CUDA Cap:   5.0
+---------------------------------------------------------
+[VSA CUDA] cudaMalloc()        (0.0736 sec)
+[VSA CUDA] Host to Device I/O  (0.0044 sec)
+[VSA CUDA] Initialization Time (0.0002 sec)
+[VSA CUDA] Flooding Time       (2.1090 sec)
+[VSA CUDA] Proxy fitting Time  (0.2669 sec)
+[VSA CUDA] Device to Host I/O  (0.0040 sec)
+[VSA CUDA] Seq Flooding Time   (0.0749 sec)
+Final distortion error: 0.045333
+[VSA CUDA] getCudaResult()     (0.0077 sec)
+
+[VSA CUDA] Input Face Count = 1600000, Proxy Count = 5000, Iterations = 40
+[VSA CUDA] buildFaceCu()       (2.4248 sec)
+---------------------------------------------------------
+Initializing CUDA for VSA Partitioner
+Found 1 CUDA devices
+Device 0: GeForce GTX 960M
+   SMs:        5
+   Global mem: 4096 MB
+   CUDA Cap:   5.0
+---------------------------------------------------------
+[VSA CUDA] cudaMalloc()        (0.6031 sec)
+[VSA CUDA] Host to Device I/O  (0.0518 sec)
+[VSA CUDA] Initialization Time (0.0004 sec)
+[VSA CUDA] Flooding Time       (13.1639 sec)
+[VSA CUDA] Proxy fitting Time  (2.9200 sec)
+[VSA CUDA] Device to Host I/O  (0.0507 sec)
+[VSA CUDA] Seq Flooding Time   (1.9497 sec)
+Final distortion error: 0.059303
+[VSA CUDA] getCudaResult()     (0.1188 sec)
